@@ -1,9 +1,10 @@
 <?php
 require_once 'functions.php';
 
-// Prevent Caching
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
+// Prevent Caching (Relaxed for Offline Support)
+// no-cache: Revalidate with server before using cache.
+// If offline, SW handles the fallback to cache.
+header("Cache-Control: no-cache, must-revalidate, max-age=0");
 header("Pragma: no-cache");
 
 
