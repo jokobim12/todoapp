@@ -1,8 +1,7 @@
-const CACHE_NAME = 'todoapp-v1';
+const CACHE_NAME = 'todoapp-v2';
 const urlsToCache = [
   'img/icon.png',
-  'manifest.json',
-  'layout.php' // Cache structure if needed, but mainly assets
+  'manifest.json'
 ];
 
 self.addEventListener('install', function (event) {
